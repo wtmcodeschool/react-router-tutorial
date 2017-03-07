@@ -15,13 +15,13 @@ Open up `index.js` and
 
 ```js
 // ...
-import { Router, Route, hashHistory } from 'react-router'
+import { Router, Route, hashHistory } from 'react-router';
 
 render((
   <Router history={hashHistory}>
     <Route path="/" component={App}/>
   </Router>
-), document.getElementById('app'))
+), document.getElementById('app'));
 ```
 
 Make sure your server is running with `npm start` and then visit
@@ -43,32 +43,32 @@ Create two new components at:
 
 ```js
 // modules/About.js
-import React from 'react'
+import React from 'react';
 
-export default React.createClass({
+export default class About extends React.Component {
   render() {
-    return <div>About</div>
+    return <div>About</div>;
   }
-})
+}
 ```
 
 ```js
 // modules/Repos.js
-import React from 'react'
+import React from 'react';
 
-export default React.createClass({
+export default class Repos extends React.Component {
   render() {
-    return <div>Repos</div>
+    return <div>Repos</div>;
   }
-})
+}
 ```
 
 Now we can couple them to the app at their respective paths.
 
 ```js
 // insert into index.js
-import About from './modules/About'
-import Repos from './modules/Repos'
+import About from './modules/About';
+import Repos from './modules/Repos';
 
 render((
   <Router history={hashHistory}>
