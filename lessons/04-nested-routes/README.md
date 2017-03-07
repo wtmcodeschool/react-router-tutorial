@@ -85,7 +85,7 @@ Next, render children inside of `App`.
         {this.props.children}
 
       </div>
-    )
+    );
   }
 // ...
 ```

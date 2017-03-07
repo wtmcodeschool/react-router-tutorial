@@ -60,10 +60,10 @@ Create a new file at `modules/NavLink.js` that looks like this:
 
 ```js
 // modules/NavLink.js
-import React from 'react'
-import { Link } from 'react-router'
+import React from 'react';
+import { Link } from 'react-router';
 
-export default React.createClass({
+export default extends React.Component {
   render() {
     return <Link {...this.props} activeClassName="active"/>
   }
@@ -74,7 +74,7 @@ Now you can go change your links to `NavLink`s.
 
 ```js
 // modules/App.js
-import NavLink from './NavLink'
+import NavLink from './NavLink';
 
 // ...
 

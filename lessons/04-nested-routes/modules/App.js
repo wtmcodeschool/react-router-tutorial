@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router'
+import React from 'react';
+import { Link } from 'react-router';
 
-export default React.createClass({
+export default class App extends React.Component {
   render() {
     return (
       <div>
@@ -11,6 +11,6 @@ export default React.createClass({
           <li><Link to="/repos">Repos</Link></li>
         </ul>
       </div>
-    )
+    );
   }
-})
+}
