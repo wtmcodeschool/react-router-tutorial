@@ -9,9 +9,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-router": "^2.8.1"
+=======
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router": "^3.0.2"
+>>>>>>> c759e719c3a3c48016185e7d4f2b090ba8ce06f4
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
