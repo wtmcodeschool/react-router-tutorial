@@ -44,6 +44,6 @@ function renderPage(appHtml) {
 
 let PORT = process.env.PORT || 8080;
 app.listen(PORT, function() {
-  /* eslint no-console: 0 */
+  /* eslint-disable no-console */
   console.log('Production Express server running at localhost:' + PORT);
 });
