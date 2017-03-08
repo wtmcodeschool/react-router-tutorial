@@ -13,7 +13,13 @@ import NavLink from './NavLink';
 
 class Repos extends React.Component{
 
-  // add this method
+  // add this method and handleSubmit below
+  constructor() {
+    super();
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  // add this method too
   handleSubmit(event) {
     event.preventDefault();
     const userName = event.target.elements[0].value;
@@ -44,6 +50,9 @@ class Repos extends React.Component{
   }
 }
 ```
+
+View the page and test the form submission. We won't make any further changes
+to the code in this lesson, but we'll look at how navigate programmatically.
 
 There are two ways you can do this, the first is simpler than the
 second.
@@ -80,7 +89,7 @@ class Router extends React.Component {
 
   handleSubmit(event) {
     // ...
-    this.context.router.push(path)
+    this.context.router.push(path);
   }
 
   // ..
